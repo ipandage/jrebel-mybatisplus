@@ -31,9 +31,9 @@ public class MybatisPlusPlugin implements Plugin {
         //if there has MybatisPlus ClassResource
         if (mark.exists()) {
             integration.addIntegrationProcessor(classLoader, "com.baomidou.mybatisplus.core.MybatisConfiguration", new MybatisConfigurationCBP());
-            integration.addIntegrationProcessor(classLoader, "com.baomidou.mybatisplus.core.MybatisMapperAnnotationBuilder", new MybatisMapperAnnotationBuilderCBP());
+            integration.addIntegrationProcessor(classLoader, "com.moka.ats.base.framework.base.dao.mybatis.extend.MybatisMapperAnnotationBuilder", new MybatisMapperAnnotationBuilderCBP());
             integration.addIntegrationProcessor(classLoader, "com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean", new MybatisSqlSessionFactoryBeanCBP());
-            integration.addIntegrationProcessor(classLoader, "com.baomidou.mybatisplus.core.override.MybatisMapperProxy", new MybatisMapperProxyCBP());
+            integration.addIntegrationProcessor(classLoader, "com.moka.ats.base.framework.base.dao.mybatis.extend.MybatisMapperProxy", new MybatisMapperProxyCBP());
             mark.delete();
         }
     }

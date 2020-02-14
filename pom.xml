@@ -17,7 +17,7 @@
     <description>A hook for Support MybatisPlus that reloads modified SQL maps.</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <sdk.version>7.0.0</sdk.version>
+        <sdk.version>7.0.1</sdk.version>
     </properties>
 
     <dependencies>
